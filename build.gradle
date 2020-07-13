@@ -28,7 +28,6 @@ android {
         applicationId "com.maratg2.test"
         minSdkVersion 15
         targetSdkVersion 21
-		multiDexEnabled true
         versionCode 1
         versionName "1.0"
         ndk {
