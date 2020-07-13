@@ -17,6 +17,8 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.0-alpha04'
+		compile 'com.android.support:support-v4:22.0.0'
+		compile 'com.android.support:appcompat-v7:22.0.0'
     }
 }
 
@@ -26,8 +28,9 @@ android {
 
     defaultConfig {
         applicationId "com.maratg2.test"
-        minSdkVersion 18
-        targetSdkVersion 23
+        minSdkVersion 15
+        targetSdkVersion 21
+		multiDexEnabled true
         versionCode 1
         versionName "1.0"
         ndk {
