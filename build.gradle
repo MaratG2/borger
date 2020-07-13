@@ -6,6 +6,7 @@
  */
 apply plugin: 'base'
 apply plugin: 'com.android.application'
+apply plugin: 'android'
 
 buildscript {
     repositories {
