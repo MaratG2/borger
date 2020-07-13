@@ -16,9 +16,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.0-alpha04'
-		compile 'com.android.support:support-v4:22.0.0'
-		compile 'com.android.support:appcompat-v7:22.0.0'
+        classpath 'com.android.tools.build:gradle:4.2.0-alpha04'	
     }
 }
 
