@@ -8,3 +8,4 @@
  */
 
 rootProject.name = 'borger'
+include ':app'
