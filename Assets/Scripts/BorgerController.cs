@@ -10,8 +10,8 @@ public class BorgerController : MonoBehaviour
     float hpDown = 0f;
     float hpUp = 0f;
 
-    bool upSide;
-    bool isFrying;
+    [HideInInspector] public bool isFrying;
+    bool upSide; 
 
     public Image barDown;
     public Image barUp;

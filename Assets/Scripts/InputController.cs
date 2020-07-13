@@ -6,6 +6,7 @@ using UnityEngine;
 public class InputController : MonoBehaviour
 {
     [SerializeField] Rigidbody cubeRB;
+    [SerializeField] BorgerController borger;
 
     [SerializeField] float forceFlip = 1f;
     [SerializeField] float forceAngleFlip = 1f;
@@ -29,7 +30,7 @@ public class InputController : MonoBehaviour
                 endPos = t.position;
                 endTime = Time.time;
 
-                if (endTime - startTime < 1f)
+                if (endTime - startTime < 1f && borger.isFrying)
                 {
                     cubeRB.AddForce(0f, forceFlip * (endPos.y - startPos.y) * (endPos - startPos).magnitude * (1 - (endTime - startTime)), 0f);
                     cubeRB.AddTorque(forceAngleFlip * (endPos.y - startPos.y), 0f, 0f);
