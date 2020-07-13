@@ -27,6 +27,7 @@ android {
 
     defaultConfig {
         applicationId "com.maratg2.test"
+		buildConfigPackageName "mg2test"
         minSdkVersion 15
         targetSdkVersion 21	
         versionCode 1
