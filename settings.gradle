@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'borger'
-include ':app'
+include ':app' , ':JazzyListView', ':ABS', ':Volley',':WallCP'
