@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.toggletest"
+    package="com.maratg2.test"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -13,8 +13,8 @@
         android:allowBackup="true"
          >
         <activity
-            android:name="com.maratg2.borger.MainActivity"
-            android:label="borger" >
+            android:name="com.maratg2.test.MainActivity"
+            android:label="test" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
