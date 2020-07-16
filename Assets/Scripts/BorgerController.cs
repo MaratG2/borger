@@ -14,6 +14,7 @@ public class BorgerController : MonoBehaviour
 
     float hpDown = 0f;
     float hpUp = 0f;
+    float maxHP = 100f;
 
     [HideInInspector] public bool isFrying;
     bool upSide; 
@@ -44,15 +45,15 @@ public class BorgerController : MonoBehaviour
                 hpDown += Time.deltaTime * frySpeed;
         }
 
-        if (hpUp > 100f)
-            hpUp = 100f;
-        if (hpDown > 100f)
-            hpDown = 100f;
+        if (hpUp > maxHP)
+            hpUp = maxHP;
+        if (hpDown > maxHP)
+            hpDown = maxHP;
 
-        barDown.fillAmount = hpDown / 100f;
-        barUp.fillAmount = hpUp / 100f;
+        barDown.fillAmount = hpDown / maxHP;
+        barUp.fillAmount = hpUp / maxHP;
 
-        if (hpUp / 100f > maxNeededFry || hpDown / 100f > maxNeededFry)
+        if (hpUp / maxHP > maxNeededFry || hpDown / maxHP > maxNeededFry)
             gameCondition = -1;
         
     }
@@ -61,7 +62,7 @@ public class BorgerController : MonoBehaviour
     {
         upSide = newSide;
 
-        if (hpUp / 100f >= minNeededFry && hpUp / 100f <= maxNeededFry && hpDown / 100f >= minNeededFry && hpDown / 100f <= maxNeededFry)
+        if (hpUp / maxHP >= minNeededFry && hpUp / maxHP <= maxNeededFry && hpDown / maxHP >= minNeededFry && hpDown / maxHP <= maxNeededFry)
         {
             gameCondition = 1;
         }
