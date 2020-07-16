@@ -21,6 +21,13 @@ public class InputController : MonoBehaviour
     float startTime;
     float endTime;
     */
+
+    public void Start()
+    {
+        borger = FindObjectOfType<BorgerController>();
+        cubeRB = borger.gameObject.GetComponent<Rigidbody>();  
+    }
+
     private void Update()
     {
         //LEGACY INPUT
